@@ -1,7 +1,14 @@
-# Simple pygame program
+import pygame
+from random import randint
+
+def randomColor() -> tuple():
+	red: int = randint(0, 255)
+	green: int = randint(0, 255) 
+	blue: int = randint(0, 255)
+	return (red, green, blue)
+	
 
 # Import and initialise the pygame library
-import pygame
 pygame.init()
 
 # Set up the drawing window
@@ -17,7 +24,7 @@ while running:
 			running = False
 			
 	# Fill the background with white
-	screen.fill((255, 255, 255))
+	screen.fill(randomColor())
 	
 	# Draw a solid blue circle in the centre
 	pygame.draw.circle(screen, (0, 0, 255), (250, 250), 75)
