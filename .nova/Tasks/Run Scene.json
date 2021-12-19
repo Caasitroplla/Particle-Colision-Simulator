@@ -1,0 +1,14 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\ncd src\npython3 scene.py"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\ncd src\npython3 scene.py"
+    }
+  },
+  "identifier" : "38850375-3A4F-4263-ADAC-E5216092C831",
+  "openLogOnRun" : "fail"
+}
