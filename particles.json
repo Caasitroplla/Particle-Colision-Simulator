@@ -5,21 +5,42 @@
 			"y" : 1,
 			"x_velos" : 1,
 			"y_velos" : 1,
-			"mass" : 2
-		},
-		{
-			"x" :511,
-			"y" : 511,
-			"x_velos" : -1,
-			"y_velos" : -1,
-			"mass" : 2
+			"mass" : 8
 		},
 		{
 			"x" : 215,
 			"y" : 215,
-			"x_velos" : 0,
-			"y_velos" : 0,
+			"x_velos" : 4,
+			"y_velos" : 1,
 			"mass" : 2
+		},
+		{
+			"x" : 34,
+			"y" : 345,
+			"x_velos" : 4,
+			"y_velos" : 3,
+			"mass" : 2
+		},
+		{
+			"x" : 123,
+			"y" : 215,
+			"x_velos" : 6,
+			"y_velos" : 1,
+			"mass" : 2
+		},
+		{
+			"x" : 1,
+			"y" : 1,
+			"x_velos" : 1,
+			"y_velos" : 1,
+			"mass" : 6
+		},
+		{
+			"x" : 223,
+			"y" : 115,
+			"x_velos" : -2,
+			"y_velos" : -3,
+			"mass" : 4
 		}
 	]
 }
