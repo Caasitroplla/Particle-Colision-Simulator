@@ -18,13 +18,13 @@ class Particle:
 		# Setting the particles mass
 		self.mass = mass
 		# Settings a radius
-		self.radius = mass
+		self.radius = mass % 10
 		self.color = random_color()
 		
 	def move(self):
 		# Incrementing the position vector by the velocity for x and y
-		self.position_vector.x += self.velocity_vector.x
-		self.position_vector.y += self.velocity_vector.y
+		self.position_vector.x += (self.velocity_vector.x / 10)
+		self.position_vector.y += (self.velocity_vector.y / 10)
 		
 	def side_check(self, screen_size: tuple) -> bool:
 		return (screen_size[0] >= self.position_vector.x 
