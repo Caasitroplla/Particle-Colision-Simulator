@@ -1,9 +1,9 @@
 import pygame 
 import sys
 from pygame.locals import *
-from src.particle import Particle
+from particle import Particle
 from math import sqrt
-from src.collision import collide
+from collision import collide
 
 def resolve(x, y):
 	return sqrt(x**2 + y**2)
@@ -47,7 +47,3 @@ class Scene:
 			pygame.display.update()
 				
 		pygame.quit() 
-
-
-if __name__ == '__main__':
-	scene = Scene([Particle(10, 10, 1, 1, 1), Particle(502, 502, -1, -1, 1)])
