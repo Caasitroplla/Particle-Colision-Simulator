@@ -1,0 +1,2 @@
+# ignore ALL .init files
+src/__init__.py
