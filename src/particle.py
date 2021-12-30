@@ -1,4 +1,4 @@
-from src.vector import Vector
+from vector import Vector
 import pygame
 from random import randint
 
@@ -11,7 +11,16 @@ def random_color() -> tuple:
 
 
 class Particle:
-	def __init__(self, x_pos, y_pos, x_vel, y_vel, mass):
+	def __init__(
+		self, 
+		x_pos, 
+		y_pos, 
+		x_vel, 
+		y_vel, 
+		mass, 
+		color = random_color()
+	):
+	
 		# Creating position and velocity vector
 		self.position_vector = Vector(x_pos, y_pos)
 		self.velocity_vector = Vector(x_vel, y_vel)
@@ -19,7 +28,7 @@ class Particle:
 		self.mass = mass
 		# Settings a radius
 		self.radius = mass % 10
-		self.color = random_color()
+		self.color = color
 		
 	def move(self):
 		# Incrementing the position vector by the velocity for x and y
