@@ -31,7 +31,10 @@ class Scene:
 					for particle in self.particles:
 						distance = resolve((primary_particle.position_vector.x - particle.position_vector.x), (primary_particle.position_vector.y - particle.position_vector.y))
 						if distance <= (primary_particle.radius + particle.radius) and distance != 0:
-							collide(primary_particle, particle)
+							try:
+								collide(primary_particle, particle)
+							except MathDomainError:
+								pass
 							collided_particles.append(particle)
 							collided_particles.append(primary_particle)
 							
