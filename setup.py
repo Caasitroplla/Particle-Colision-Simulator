@@ -1,6 +1,7 @@
 from tkinter import *
 import json
 from tkinter.colorchooser import askcolor
+from random import randint
 
 def format_color(color):
 	return (int(color[1] + color[2], 16), int(color[3] + color[4], 16), int(color[5] + color[6], 16))
