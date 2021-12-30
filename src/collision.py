@@ -1,4 +1,4 @@
-from src.particle import Particle
+from particle import Particle
 from math import sqrt
 
 def quadratic_solve(a: float, b: float, c: float) -> tuple:
