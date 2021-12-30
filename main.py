@@ -10,7 +10,6 @@ def main():
 	# load json
 	with open("particles.json", "r") as file:
 		data = load(file)
-		print(data)
 	
 	# make particles from json
 	particles = []
