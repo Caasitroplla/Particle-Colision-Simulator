@@ -1,0 +1,14 @@
+{
+  "actions" : {
+    "build" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\n"
+    },
+    "run" : {
+      "enabled" : true,
+      "script" : "#!\/bin\/sh\npython3 setup.py"
+    }
+  },
+  "identifier" : "4334035B-0509-4114-9BB8-4E4E287D49FC",
+  "openLogOnRun" : "start"
+}
