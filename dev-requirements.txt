@@ -1,0 +1,5 @@
+# This file contains all the development requirements for the Particle Collision Simulator
+
+# Base tools
+Pygame~=2.0.1
+Python~=3.9.4
