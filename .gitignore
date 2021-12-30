@@ -1,2 +1,5 @@
 # ignore ALL .init files
 src/__init__.py
+
+# ignore pycache folder
+src/__pycache__
