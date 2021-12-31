@@ -27,7 +27,7 @@ class Particle:
 		# Setting the particles mass
 		self.mass = mass
 		# Settings a radius
-		self.radius = mass % 10
+		self.radius = mass
 		self.color = color
 		
 	def move(self):
