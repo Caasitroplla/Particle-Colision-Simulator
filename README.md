@@ -26,7 +26,7 @@ Alternatively you can run the shell script:
 
 ```bash
 #!/bin/sh
-python3 setup.py
+python3 particle_setup.py
 ```
 
 Now you are able to use a user interface to add particles or reset the json file.
