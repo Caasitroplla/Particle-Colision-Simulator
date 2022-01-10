@@ -2,10 +2,10 @@
     "particles": [
         {
             "x": 1,
-            "y": 1,
+            "y": 100,
             "x_velos": 2,
-            "y_velos": 2,
-            "mass": 1,
+            "y_velos": 0,
+            "mass": 10,
             "color": [
                 255,
                 73,
@@ -13,11 +13,11 @@
             ]
         },
         {
-            "x": 500,
-            "y": 500,
-            "x_velos": -2,
-            "y_velos": -2,
-            "mass": 1,
+            "x": 501,
+            "y": 100,
+            "x_velos": -4,
+            "y_velos": 0,
+            "mass": 10,
             "color": [
                 70,
                 70,
