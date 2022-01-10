@@ -3,7 +3,7 @@ from math import sqrt
 
 def quadratic_solve(a: float, b: float, c: float) -> tuple:
 	# Calculate the discriminant
-	discriminant = b**2 + 4 * a * c
+	discriminant = b**2 - 4 * a * c
 	# Find two solutions
 	solution_1 = (- b + sqrt(discriminant))/(2 * a)
 	solution_2 = (- b - sqrt(discriminant))/(2 * a)
