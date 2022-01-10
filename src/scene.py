@@ -19,13 +19,14 @@ class Scene:
 		self.loop()
 		
 	def loop(self):
-		collided_particles = []
+		
 		while self.running :
 			for event in pygame.event.get():
 				if event.type == QUIT:
 					running = False
 					
 			# Collision detection
+			collided_particles = []
 			for primary_particle in self.particles:
 				if not collided_particles.__contains__(primary_particle):
 					for particle in self.particles:
@@ -34,7 +35,7 @@ class Scene:
 							try:
 								collide(primary_particle, particle)
 							except MathDomainError:
-								pass
+								print("Math Domain Error(no collision was calculated)")
 							collided_particles.append(particle)
 							collided_particles.append(primary_particle)
 							
