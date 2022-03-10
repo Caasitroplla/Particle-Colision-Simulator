@@ -1,10 +1,10 @@
 from json import load
 import sys
-sys.path.insert(0, './src')
-from particle import Particle
-from vector import Vector
-from scene import Scene
-from collision import collide
+
+from src.particle import Particle
+from src.vector import Vector
+from src.scene import Scene
+from src.collision import collide
 
 def main():
 	# load json

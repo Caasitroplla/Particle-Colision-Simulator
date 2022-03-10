@@ -1,4 +1,4 @@
-from vector import Vector
+from src.vector import Vector
 import pygame
 from random import randint
 

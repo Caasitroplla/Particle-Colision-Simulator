@@ -1,9 +1,9 @@
 import pygame 
 import sys
 from pygame.locals import *
-from particle import Particle
+from src.particle import Particle
 from math import sqrt
-from collision import collide
+from src.collision import collide
 
 def resolve(x, y):
 	return sqrt(x**2 + y**2)

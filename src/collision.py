@@ -1,4 +1,4 @@
-from particle import Particle
+from src.particle import Particle
 from math import sqrt
 
 def quadratic_solve(a: float, b: float, c: float) -> tuple:
@@ -71,12 +71,14 @@ def collide(particle_a: Particle, particle_b: Particle):
 		(0)
 	)
 	
-	# Picking the correct velocity out of the pair
+	# Picking the correct velocity out of the pair x
 	if final_a_x_velos_tuple[0] == 0:
 		final_a_x_velos = final_a_x_velos_tuple[1]
 	else:
 		final_a_x_velos = final_a_x_velos_tuple[0]
-		
+	
+	# Picking the correct velocity out of the pair y
+
 	if final_a_y_velos_tuple[0] == 0:
 		final_a_y_velos = final_b_y_velos_tuple[1]
 	else:
