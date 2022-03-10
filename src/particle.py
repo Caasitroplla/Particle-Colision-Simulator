@@ -2,14 +2,14 @@ from vector import Vector
 import pygame
 from random import randint
 
-
+# Random colour generator for particles NOTE: should be made redundant
 def random_color() -> tuple:
 	red = randint(0, 255)
 	green = randint(0, 255)
 	blue = randint(0, 255)
 	return (red, green, blue)
 
-
+# Particle Class definition
 class Particle:
 	def __init__(
 		self, 
